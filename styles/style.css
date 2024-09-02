@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100vh; /* Asegura que main ocupe toda la altura del viewport */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho y alto total */
+}
+
+.Options {
+    flex: 1;
+    max-width: 250px;
+    background: #6a0dad; /* Color de fondo violeta */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin-right: 20px;
+    color: #fff; /* Color del texto en blanco para contraste */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Estira el contenido para que ocupe todo el espacio */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total */
+}
+
+.Options h1 {
+    margin-top: 0;
+}
+
+.Options ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Hace que la lista ocupe el espacio restante */
+}
+
+.Options li {
+    padding: 8px 0;
+    border-bottom: 1px solid #fff; /* Color blanco para los bordes de los ítems de la lista */
+}
+
+.Options li:last-child {
+    border-bottom: none;
+}
+
+.Options p {
+    margin: 16px 0 0;
+    font-size: 1em;
+    color: #fff; /* Color del texto en blanco para contraste */
+}
+
+.Shoop {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-grow: 1; /* Asegura que la sección de tarjetas ocupe el espacio restante */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total */
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%; /* Asegura que la tarjeta ocupe el ancho disponible */
+    max-width: 300px; /* Tamaño máximo de la tarjeta */
+    max-height: 350px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 1.25em;
+    margin: 0;
+    color: #333;
+}
+
+.card-price {
+    font-size: 1.1em;
+    color: #666;
+    margin: 8px 0;
+}
+
+.card-button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+}
